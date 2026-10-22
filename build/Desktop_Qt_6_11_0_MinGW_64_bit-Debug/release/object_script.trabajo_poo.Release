@@ -1,0 +1,12 @@
+release/administradordanio.o
+release/elemento.o
+release/humano.o
+release/ia.o
+release/ia_aleatoria.o
+release/ia_estrategica.o
+release/ia_super.o
+release/interfaz.o
+release/jugador.o
+release/main.o
+release/partida.o
+release/moc_interfaz.o

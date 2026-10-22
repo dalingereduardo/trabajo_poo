@@ -1,0 +1,5 @@
+# Matriz de daño: Fila = Atacante, Columna = Defensor (Agua, Tierra, Fuego, Aire)
+20 30 10 25
+25 20 35 15
+30 15 20 40
+15 25 30 20

@@ -1,0 +1,12 @@
+debug/administradordanio.o
+debug/elemento.o
+debug/humano.o
+debug/ia.o
+debug/ia_aleatoria.o
+debug/ia_estrategica.o
+debug/ia_super.o
+debug/interfaz.o
+debug/jugador.o
+debug/main.o
+debug/partida.o
+debug/moc_interfaz.o

@@ -1,0 +1,5 @@
+# Matriz de efectividad de daño (Agua, Tierra, Fuego, Aire)
+20 40 10 25
+15 20 50 30
+35 10 20 45
+30 25 15 20
