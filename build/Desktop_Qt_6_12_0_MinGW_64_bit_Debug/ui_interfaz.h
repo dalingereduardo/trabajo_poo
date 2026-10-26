@@ -50,16 +50,22 @@ public:
     QProgressBar *barIA3;
     QProgressBar *barIA2;
     QProgressBar *barIA0;
-    QTextEdit *txtLog;
     QPushButton *btnGuardar;
     QPushButton *btnElem4;
     QProgressBar *barH4;
     QProgressBar *barIA4;
     QPushButton *btnSalirJuego;
+    QTextEdit *txtHistorial;
+    QLabel *lblTipoIA0;
+    QLabel *lblTipoIA1;
+    QLabel *lblTipoIA2;
+    QLabel *lblTipoIA3;
+    QLabel *lblTipoIA4;
     QWidget *page_2;
     QLabel *lblGanador;
     QPushButton *btnReiniciar;
     QPushButton *btnSalirFinal;
+    QTextEdit *txtResumenFinal;
 
     void setupUi(QWidget *interfaz)
     {
@@ -73,11 +79,12 @@ public:
         page->setObjectName("page");
         label = new QLabel(page);
         label->setObjectName("label");
-        label->setGeometry(QRect(260, 120, 631, 31));
+        label->setGeometry(QRect(230, 120, 631, 31));
         QFont font;
         font.setFamilies({QString::fromUtf8("Titillium Web")});
         font.setPointSize(22);
         label->setFont(font);
+        label->setAlignment(Qt::AlignmentFlag::AlignCenter);
         label_2 = new QLabel(page);
         label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(220, 320, 141, 20));
@@ -159,10 +166,6 @@ public:
         barIA0->setObjectName("barIA0");
         barIA0->setGeometry(QRect(770, 160, 118, 23));
         barIA0->setValue(24);
-        txtLog = new QTextEdit(page_3);
-        txtLog->setObjectName("txtLog");
-        txtLog->setGeometry(QRect(380, 170, 321, 251));
-        txtLog->setReadOnly(true);
         btnGuardar = new QPushButton(page_3);
         btnGuardar->setObjectName("btnGuardar");
         btnGuardar->setGeometry(QRect(480, 450, 121, 29));
@@ -180,26 +183,51 @@ public:
         btnSalirJuego = new QPushButton(page_3);
         btnSalirJuego->setObjectName("btnSalirJuego");
         btnSalirJuego->setGeometry(QRect(1039, 0, 51, 29));
+        txtHistorial = new QTextEdit(page_3);
+        txtHistorial->setObjectName("txtHistorial");
+        txtHistorial->setGeometry(QRect(370, 160, 331, 261));
+        lblTipoIA0 = new QLabel(page_3);
+        lblTipoIA0->setObjectName("lblTipoIA0");
+        lblTipoIA0->setGeometry(QRect(920, 170, 91, 16));
+        lblTipoIA1 = new QLabel(page_3);
+        lblTipoIA1->setObjectName("lblTipoIA1");
+        lblTipoIA1->setGeometry(QRect(920, 220, 101, 20));
+        lblTipoIA2 = new QLabel(page_3);
+        lblTipoIA2->setObjectName("lblTipoIA2");
+        lblTipoIA2->setGeometry(QRect(920, 280, 91, 16));
+        lblTipoIA3 = new QLabel(page_3);
+        lblTipoIA3->setObjectName("lblTipoIA3");
+        lblTipoIA3->setGeometry(QRect(920, 340, 101, 16));
+        lblTipoIA4 = new QLabel(page_3);
+        lblTipoIA4->setObjectName("lblTipoIA4");
+        lblTipoIA4->setGeometry(QRect(920, 400, 111, 16));
         stackedWidget->addWidget(page_3);
         page_2 = new QWidget();
         page_2->setObjectName("page_2");
         lblGanador = new QLabel(page_2);
         lblGanador->setObjectName("lblGanador");
-        lblGanador->setGeometry(QRect(440, 90, 571, 51));
+        lblGanador->setGeometry(QRect(270, 90, 571, 51));
         QFont font2;
         font2.setPointSize(16);
         lblGanador->setFont(font2);
+        lblGanador->setAlignment(Qt::AlignmentFlag::AlignCenter);
         btnReiniciar = new QPushButton(page_2);
         btnReiniciar->setObjectName("btnReiniciar");
-        btnReiniciar->setGeometry(QRect(440, 380, 121, 29));
+        btnReiniciar->setGeometry(QRect(430, 480, 121, 29));
         btnSalirFinal = new QPushButton(page_2);
         btnSalirFinal->setObjectName("btnSalirFinal");
-        btnSalirFinal->setGeometry(QRect(590, 380, 71, 29));
+        btnSalirFinal->setGeometry(QRect(590, 480, 71, 29));
+        txtResumenFinal = new QTextEdit(page_2);
+        txtResumenFinal->setObjectName("txtResumenFinal");
+        txtResumenFinal->setGeometry(QRect(390, 190, 341, 261));
+        QFont font3;
+        font3.setPointSize(14);
+        txtResumenFinal->setFont(font3);
         stackedWidget->addWidget(page_2);
 
         retranslateUi(interfaz);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(interfaz);
@@ -227,6 +255,11 @@ public:
         btnGuardar->setText(QCoreApplication::translate("interfaz", "Guardar Partida", nullptr));
         btnElem4->setText(QCoreApplication::translate("interfaz", "Elemento 5", nullptr));
         btnSalirJuego->setText(QCoreApplication::translate("interfaz", "Salir", nullptr));
+        lblTipoIA0->setText(QCoreApplication::translate("interfaz", "Elemento IA 1", nullptr));
+        lblTipoIA1->setText(QCoreApplication::translate("interfaz", "Elemento IA 2", nullptr));
+        lblTipoIA2->setText(QCoreApplication::translate("interfaz", "Elemento IA 3", nullptr));
+        lblTipoIA3->setText(QCoreApplication::translate("interfaz", "Elemento IA 4", nullptr));
+        lblTipoIA4->setText(QCoreApplication::translate("interfaz", "Elemento IA 5", nullptr));
         lblGanador->setText(QCoreApplication::translate("interfaz", "\302\241Partida Finalizada!", nullptr));
         btnReiniciar->setText(QCoreApplication::translate("interfaz", "Volver al men\303\272", nullptr));
         btnSalirFinal->setText(QCoreApplication::translate("interfaz", "Salir", nullptr));

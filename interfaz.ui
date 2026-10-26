@@ -23,13 +23,13 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>2</number>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>260</x>
+       <x>230</x>
        <y>120</y>
        <width>631</width>
        <height>31</height>
@@ -43,6 +43,9 @@
      </property>
      <property name="text">
       <string>JUEGO DE COMBATES DE ELEMENTOS</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_2">
@@ -339,19 +342,6 @@
       <number>24</number>
      </property>
     </widget>
-    <widget class="QTextEdit" name="txtLog">
-     <property name="geometry">
-      <rect>
-       <x>380</x>
-       <y>170</y>
-       <width>321</width>
-       <height>251</height>
-      </rect>
-     </property>
-     <property name="readOnly">
-      <bool>true</bool>
-     </property>
-    </widget>
     <widget class="QPushButton" name="btnGuardar">
      <property name="geometry">
       <rect>
@@ -417,12 +407,87 @@
       <string>Salir</string>
      </property>
     </widget>
+    <widget class="QTextEdit" name="txtHistorial">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>160</y>
+       <width>331</width>
+       <height>261</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTipoIA0">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>170</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elemento IA 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTipoIA1">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>220</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elemento IA 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTipoIA2">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>280</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elemento IA 3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTipoIA3">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>340</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elemento IA 4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTipoIA4">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>400</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elemento IA 5</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="page_2">
     <widget class="QLabel" name="lblGanador">
      <property name="geometry">
       <rect>
-       <x>440</x>
+       <x>270</x>
        <y>90</y>
        <width>571</width>
        <height>51</height>
@@ -436,12 +501,15 @@
      <property name="text">
       <string>¡Partida Finalizada!</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QPushButton" name="btnReiniciar">
      <property name="geometry">
       <rect>
-       <x>440</x>
-       <y>380</y>
+       <x>430</x>
+       <y>480</y>
        <width>121</width>
        <height>29</height>
       </rect>
@@ -454,13 +522,28 @@
      <property name="geometry">
       <rect>
        <x>590</x>
-       <y>380</y>
+       <y>480</y>
        <width>71</width>
        <height>29</height>
       </rect>
      </property>
      <property name="text">
       <string>Salir</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="txtResumenFinal">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>190</y>
+       <width>341</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
      </property>
     </widget>
    </widget>
